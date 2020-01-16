@@ -1,9 +1,10 @@
 # gitbook-plugin-graphviz
 Graphviz support for GitBook
 
-[![Build Status](https://travis-ci.org/darvasd/gitbook-plugin-graphviz.svg?branch=master)](https://travis-ci.org/darvasd/gitbook-plugin-graphviz)
 
-Based on [vowstar/gitbook-plugin-uml](https://github.com/vowstar/gitbook-plugin-uml) and [viz.js](https://www.npmjs.com/package/viz.js).
+Forked from [darvasd](https://github.com/darvasd/gitbook-plugin-graphviz)
+
+Add support of viz.js's support engines.
 
 ## Usage
 
@@ -15,11 +16,11 @@ digraph G {
 </code></pre> 
 
 Alternative format:
-<pre><code>{ %graphviz% }
+<pre><code>{% graphviz dot %}
 digraph G {
 	A -> B -> C;
 }
-{ %endgraphviz% }
+{%endgraphviz %}
 </code></pre> 
 
 
@@ -30,12 +31,11 @@ Configure the plugin in `book.json`.
 
 ```
 "plugins": [
-      "graphviz@git+https://github.com/darvasd/gitbook-plugin-graphviz.git"
+      "graphviz@git+https://github.com/Gowa2017/gitbook-plugin-graphviz.git"
   ],
 "pluginsConfig": {
     "graphviz": {
-        "format": "svg",
-        "engine": "dot"
+        "format": "svg"
     }
 }
 ``` 
