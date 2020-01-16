@@ -44,3 +44,7 @@ Configure the plugin in `book.json`.
 | --- | --- |
 | `format` | Output format. Can be: `svg`, `xdot`, `plain`, `json`. |
 | `engine` | Graphviz engine to be used. Can be: `dot`, `circo`, `neato`, `osage`, `twopi`. |
+
+# Bug
+
+Whe use with **meriamd** V8, the node's style is overrided by mermaid's style.
