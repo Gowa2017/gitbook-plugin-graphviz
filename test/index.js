@@ -9,7 +9,7 @@ var expectedSvg = '<p><?xml version="1.0" encoding="UTF-8" standalone="no"?><!DO
 describe('graphviz', function() {
     it('should correctly replace by ```graphviz``` tag', function() {
         return tester.builder()
-            .withContent('\n```graphviz\ndigraph G { A->B->C; }\n```')
+            .withContent('\n```dot\ndigraph G { A->B->C; }\n```')
             .withLocalPlugin(path.join(__dirname, '..'))
             .withBookJson({
                 gitbook: pkg.engines.gitbook,

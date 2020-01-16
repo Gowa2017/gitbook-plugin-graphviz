@@ -7,7 +7,7 @@ Based on [vowstar/gitbook-plugin-uml](https://github.com/vowstar/gitbook-plugin-
 
 ## Usage
 
-<pre><code>```graphviz
+<pre><code>```dot
 digraph G {
 	A -> B -> C;
 }
@@ -43,4 +43,4 @@ Configure the plugin in `book.json`.
 | Variable | Description |
 | --- | --- |
 | `format` | Output format. Can be: `svg`, `xdot`, `plain`, `json`. |
-| `engine` | Graphviz engine to be used. Can be: `doz`, `circo`, `neato`, `osage`, `twopi`. |
+| `engine` | Graphviz engine to be used. Can be: `dot`, `circo`, `neato`, `osage`, `twopi`. |
