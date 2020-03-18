@@ -60,7 +60,7 @@ module.exports = {
             let engines = ['dot', 'circo', 'fdp', 'neato', 'osage', 'twopi']
             for (e of engines) {
                 let re = new RegExp('^```' + e + '((.*[\r\n]+)+?)?```$', 'igm')
-                codes = re.exec(page.content);
+                codes = page.content.match(re)
                 // Begin replace
                 if (codes instanceof Array) {
                     for (var i = 0, len = codes.length; i < len; i++) {
